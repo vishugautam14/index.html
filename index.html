@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Brew Haven Cafe</title>
+
+<style>
+
+/* GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#f8f5f2;
+color:#333;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+nav{
+position:sticky;
+top:0;
+background:#4b2e2e;
+display:flex;
+justify-content:space-between;
+padding:15px 50px;
+z-index:999;
+}
+
+nav h2{
+color:white;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:url("https://images.unsplash.com/photo-1509042239860-f550ce710b93") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.btn{
+padding:12px 25px;
+margin:10px;
+background:#c69c6d;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+/* SECTION */
+
+section{
+padding:60px 50px;
+}
+
+/* MENU */
+
+.menu-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:10px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+/* TESTIMONIAL */
+
+.testimonial{
+background:#fff;
+padding:20px;
+margin:10px 0;
+border-left:5px solid #c69c6d;
+}
+
+/* CONTACT */
+
+.contact input,
+.contact textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+background:#4b2e2e;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* DARK MODE */
+
+.dark{
+background:#1e1e1e;
+color:white;
+}
+
+.dark nav{
+background:black;
+}
+
+.dark .card{
+background:#333;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:green;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:20px;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<h2>Brew Haven Cafe</h2>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<button onclick="darkMode()">🌙</button>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Fresh Coffee, Warm Moments</h1>
+
+<button class="btn">View Menu</button>
+<button class="btn">Visit Us</button>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Us</h2>
+
+<p>
+
+Welcome to Brew Haven Cafe — where every cup tells a story.
+We use fresh ingredients, serve handcrafted beverages,
+and create a cozy relaxing environment with friendly service.
+
+</p>
+
+</section>
+
+<!-- MENU -->
+
+<section id="menu">
+
+<h2>Our Menu</h2>
+
+<div class="menu-container">
+
+<div class="card">
+<h3>Espresso</h3>
+<p>₹120</p>
+</div>
+
+<div class="card">
+<h3>Cappuccino</h3>
+<p>₹180</p>
+</div>
+
+<div class="card">
+<h3>Latte</h3>
+<p>₹200</p>
+</div>
+
+<div class="card">
+<h3>Cold Coffee</h3>
+<p>₹160</p>
+</div>
+
+<div class="card">
+<h3>Smoothies</h3>
+<p>₹220</p>
+</div>
+
+<div class="card">
+<h3>Sandwich</h3>
+<p>₹150</p>
+</div>
+
+<div class="card">
+<h3>Brownie</h3>
+<p>₹140</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+
+<img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb">
+
+<img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814">
+
+<img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735">
+
+</div>
+
+</section>
+
+<!-- TESTIMONIAL -->
+
+<section>
+
+<h2>Testimonials</h2>
+
+<div class="testimonial">
+
+⭐⭐⭐⭐⭐  
+Best coffee in town!
+
+</div>
+
+<div class="testimonial">
+
+⭐⭐⭐⭐⭐  
+Lovely ambience & friendly staff.
+
+</div>
+
+<div class="testimonial">
+
+⭐⭐⭐⭐⭐  
+Perfect place to relax.
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<p>Delhi, India</p>
+
+<p>9876543210</p>
+
+<p>brewhaven@gmail.com</p>
+
+<iframe
+width="100%"
+height="250"
+src="https://maps.google.com/maps?q=Delhi&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+<h3>Reserve a Table</h3>
+
+<input placeholder="Name">
+<input placeholder="Email">
+<input placeholder="Phone">
+<input type="datetime-local">
+<textarea placeholder="Message"></textarea>
+
+<button class="btn">Submit</button>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 Brew Haven Cafe</p>
+
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+
+<a class="whatsapp"
+href="https://wa.me/919999999999">
+
+💬
+
+</a>
+
+<!-- SCRIPT -->
+
+<script>
+
+function darkMode(){
+
+document.body.classList.toggle("dark");
+
+}
+
+</script>
+
+</body>
+
+</html>
